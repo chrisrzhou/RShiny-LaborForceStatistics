@@ -37,7 +37,7 @@ I have decided to use the term "Black" to denote the "Black or African American"
 
 
 ## Resources
-- [Homepage](https://http://chrisrzhou.github.io/)
+- [Homepage](https://chrisrzhou.github.io/)
 - [R Shiny Projects](http://ec2-54-183-164-175.us-west-1.compute.amazonaws.com:3838/)
 - [Github Project](https://github.com/chrisrzhou/RShiny-LaborForceStatistics)
 - [Burea of Labor Statistics (Current Population Survey)](http://www.bls.gov/cps/)
