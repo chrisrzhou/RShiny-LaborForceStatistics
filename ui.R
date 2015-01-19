@@ -8,7 +8,7 @@ shinyUI(fluidPage(
             p(class="text-small",
               a(href="https://chrisrzhou.github.io/", target="_blank", "by chrisrzhou"),
               a(href="https://github.com/chrisrzhou/RShiny-LaborForceStatistics", target="_blank", icon("github")), " | ",
-              a(href="http://bl.ocks.org/chrisrzhou", target="_blank", icon("th")), " | ",
+              a(href="http://bl.ocks.org/chrisrzhou", target="_blank", icon("cubes")), " | ",
               a(href="https://www.linkedin.com/in/chrisrzhou", target="_blank", icon("linkedin"))),
             hr(),
             p(class="text-small", "Labor Force Statistics visualizations.  All data is derived from the Current Population Survey results by the Bureau of Labor Statistics website: ",
