@@ -1,5 +1,7 @@
 # Labor Force Statistics Explorer
 
+------
+
 ## About
 The [Current Population Survey (CPS)](http://www.bls.gov/cps/) is an online resource for labor force statistics produced by the Bureau of Labor Statistics (BLS).
 
@@ -19,11 +21,14 @@ Throughout the application, the user is empowered with selection widgets to zoom
 
 I have decided to use the term "Black" to denote the "Black or African American" population, as well as assigning cliched color mappings to genders.  This is simply chosen **solely** as a concise way to help organize the visuals, and no offense is made to anyone.  In fact, it is my strong belief that the idea of a "race" should **not exist at all**, and it is somewhat unfortunate that a lot of labor statistics is being analyzed with this detail.  Similarly, equal gender rights should be the goal of mankind's social evolution and I hope that in the future, these analysis would become a trivial topic in the United States labor statistics.
 
+------
+
 ## Visualizations:
 - **Trend:** This section visualizes the labor force population landscape by gender over time with the help of a bar chart.
 - **Occupation:** This section visualizes employment by occupation. The facet plot provides a deep dive into race, age group, and gender breakdowns of employment by occupation.
 - **Education:** This section displays visualizations of labor force statistics by education level attainment with the help of a bar chart. 
 
+------
 
 ## Other notes:
 - Use the selection widgets to help highlight specific data subsets of interest, and to view a different visualization based on the selected metric report.
@@ -34,7 +39,7 @@ I have decided to use the term "Black" to denote the "Black or African American"
 
 - This project/application is not affiliated with the Burea of Labor Statistics.  The work is intended as a showcase of R Shiny data visualization capabilities.  All information courtesy of BLS/CPS. Used with permission.
 
-
+------
 
 ## Resources
 - [Homepage](https://chrisrzhou.github.io/)
