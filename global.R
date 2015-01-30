@@ -4,7 +4,7 @@
 library(shiny)
 library(ggplot2)
 library(scales)
-source("./parser.R")
+source("data/parser.R")
 
 
 # =========================================================================
@@ -37,8 +37,8 @@ choices <- list(
 # server.R variables and functions
 # =========================================================================
 CATEGORYCOLORS <- c("Men" = "#4393C3",
-                   "Women"="#D6604D",
-                   "White"="#1f77b4",
-                   "Asian"="#ff7f0e",
-                   "Hispanic"="#2ca02c",
-                   "Black"="#d62728")
+                    "Women"="#D6604D",
+                    "White"="#1f77b4",
+                    "Asian"="#ff7f0e",
+                    "Hispanic"="#2ca02c",
+                    "Black"="#d62728")

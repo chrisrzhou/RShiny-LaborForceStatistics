@@ -1,12 +1,12 @@
 shinyUI(fluidPage(
     tags$head(tags$link(rel="stylesheet", type="text/css", href="app.css")),
     
-    titlePanel("Labor Force Statistics"),
+    titlePanel("Labor Force Statistics Explorer"),
     
     sidebarLayout(
         sidebarPanel(
             p(class="text-small",
-              a(href="https://chrisrzhou.github.io/", target="_blank", "by chrisrzhou"),
+              a(href="http://chrisrzhou.datanaut.io/", target="_blank", "by chrisrzhou"),
               a(href="https://github.com/chrisrzhou/RShiny-LaborForceStatistics", target="_blank", icon("github")), " | ",
               a(href="http://bl.ocks.org/chrisrzhou", target="_blank", icon("cubes")), " | ",
               a(href="https://www.linkedin.com/in/chrisrzhou", target="_blank", icon("linkedin"))),
@@ -17,29 +17,29 @@ shinyUI(fluidPage(
             
             conditionalPanel(
                 condition="input.tabset == 'Trend'",
-                selectInput(inputId="trend_population", label="Population", choices=choices$trend_population, selected=choices$trend_population[[3]]),
+                selectInput(inputId="trend_population", label="Select Population", choices=choices$trend_population, selected=choices$trend_population[[3]]),
                 hr(),
-                sliderInput(inputId="trend_year_min", label="Years", min=min(choices$trend_year), max=max(choices$trend_year), value=1980, step=1, format="####"),
+                sliderInput(inputId="trend_year_min", label="Filter Years", min=min(choices$trend_year), max=max(choices$trend_year), value=1980, step=1, format="####"),
                 sliderInput(inputId="trend_year_max", label="", min=min(choices$trend_year), max=max(choices$trend_year), value=max(choices$trend_year), step=1, format="####")
             ),
             
             conditionalPanel(
                 condition="input.tabset == 'Occupation'",
                 hr(),
-                checkboxGroupInput(inputId="occupation_age_group", label="Age Group:", choices=choices$occupation_age_group, selected=choices$occupation_age_group[3:4]),
+                checkboxGroupInput(inputId="occupation_age_group", label="Choose Age Group:", choices=choices$occupation_age_group, selected=choices$occupation_age_group[3:4]),
                 hr(),
-                checkboxGroupInput(inputId="occupation_race", label="Race:", choices=choices$occupation_race, selected=choices$occupation_race),
+                checkboxGroupInput(inputId="occupation_race", label="Choose Race:", choices=choices$occupation_race, selected=choices$occupation_race),
                 hr(),
-                checkboxGroupInput(inputId="occupation_occupation", label="Occupation:", choices=choices$occupation_occupation, selected=choices$occupation_occupation)
+                checkboxGroupInput(inputId="occupation_occupation", label="Choose Occupation:", choices=choices$occupation_occupation, selected=choices$occupation_occupation)
             ),
             
             conditionalPanel(
                 condition="input.tabset == 'Education'",
-                selectInput(inputId="education_category", label="Category", choices=choices$category, selected=choices$category[[1]]),
+                selectInput(inputId="education_category", label="Select Category", choices=choices$category, selected=choices$category[[1]]),
                 hr(),
-                selectInput(inputId="education_metric", label="Metric", choices=choices$education_metric, selected=choices$education_metric[[1]]),
+                selectInput(inputId="education_metric", label="Select Metric", choices=choices$education_metric, selected=choices$education_metric[[1]]),
                 hr(),
-                checkboxGroupInput(inputId="education_education", label="Education:", choices=choices$education_education, selected=choices$education_education)
+                checkboxGroupInput(inputId="education_education", label="Choose Education:", choices=choices$education_education, selected=choices$education_education)
             ),
             width=3
         ),
