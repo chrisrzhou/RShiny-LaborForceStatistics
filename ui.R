@@ -19,8 +19,8 @@ shinyUI(fluidPage(
                 condition="input.tabset == 'Trend'",
                 selectInput(inputId="trend_population", label="Select Population", choices=choices$trend_population, selected=choices$trend_population[[3]]),
                 hr(),
-                sliderInput(inputId="trend_year_min", label="Filter Years", min=min(choices$trend_year), max=max(choices$trend_year), value=1980, step=1, format="####"),
-                sliderInput(inputId="trend_year_max", label="", min=min(choices$trend_year), max=max(choices$trend_year), value=max(choices$trend_year), step=1, format="####")
+                sliderInput(inputId="trend_years", label="Filter Years", min=min(choices$trend_year), max=max(choices$trend_year),
+                            value=c(1980, max(choices$trend_year)), step=1, format="####")
             ),
             
             conditionalPanel(

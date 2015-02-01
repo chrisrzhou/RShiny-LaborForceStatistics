@@ -6,8 +6,8 @@ shinyServer(function(input, output) {
     resource.trend <- reactive({
         df <- dataframes$trend %>%  # subset/filter df_base based on user selections
             filter(population == input$trend_population,
-                   year >= input$trend_year_min,
-                   year <= input$trend_year_max)
+                   year >= input$trend_years[1],
+                   year <= input$trend_years[2])
         return(df)
     })
     
@@ -61,6 +61,7 @@ shinyServer(function(input, output) {
         df <- resource.trend()
         df_men <- df %>% filter(gender == "Men")
         df_women <- df %>% filter(gender == "Women")
+        population <- input$trend_population
         
         # plotting
         plot <- ggplot(df, aes(x=year, y=value, group=gender, fill=gender)) +
@@ -75,7 +76,7 @@ shinyServer(function(input, output) {
             scale_color_manual(values=CATEGORYCOLORS) +
             labs(title=sprintf("%s (%s - %s)", input$trend_population, input$trend_year_min, input$trend_year_max),
                  x="Year",
-                 y="Labor Metric Value") + 
+                 y=population) + 
             theme(panel.background=element_blank(),
                   axis.text.x=element_blank(),
                   axis.ticks=element_blank())
@@ -98,7 +99,7 @@ shinyServer(function(input, output) {
             scale_color_manual(values=CATEGORYCOLORS) +
             labs(title="Employment by Occupations (2013)",
                  x="Occupation",
-                 y="Labor Metric Value") + 
+                 y="Employment") + 
             theme(panel.background=element_blank(),
                   axis.text.x=element_blank(),
                   axis.ticks=element_blank())
@@ -135,8 +136,9 @@ shinyServer(function(input, output) {
             scale_fill_manual(values=CATEGORYCOLORS) +
             labs(title=sprintf("%s (by %s)", metric, category),
                  x="Education Level",
-                 y="Labor Metric Value") + 
-            theme(panel.background=element_blank())
+                 y=metric) + 
+            theme(panel.background=element_blank(),
+                  axis.ticks.y = element_blank())
         plot <- plot + coord_flip()  # flip coordinates
         return(plot)
     })
