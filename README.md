@@ -46,7 +46,7 @@ Take a look at this:
 
 as opposed to this:
 
-![image-trend-unemployed-%][]
+![image-trend-unemployed-rate][]
 
 We will delve into details on some interesting topics revolved around:
 
@@ -84,7 +84,7 @@ women population.
 The next bar chart provides another view on the labor force by gender, by looking at employment *rates* instead of 
 raw population headcount as displayed in the previous graph. 
 
-![image-trend-employed-%][]
+![image-trend-employed-rate][]
 
 We observe that there has been an increase in women being employed in the labor force over time (from 47.7% in 1980 
 to 53.2% in 2013).  This is a good sign and hopefully things continue to trend towards gender equality.
@@ -112,7 +112,7 @@ are potentially interesting explanations for some of the questions raised out of
 
 ### How about the unemployed?
 
-![image-trend-unemployed-%][]
+![image-trend-unemployed-rate][]
 
 From this bar chart, we see that both men and women suffer through economic recessions.
 
@@ -251,10 +251,10 @@ The next section filters the results by race instead of gender.
 
 ![image-education-labor-force-by-race][]
 
-![image-education-unemployment-by-race][]
-
 The unemployment rate trend is essentially the same as we observed in the gender overview i.e. a higher education 
 degree confers better chances of getting a job.
+
+![image-education-unemployment-by-race][]
 
 However something stands out.
 
@@ -508,23 +508,23 @@ of them, and they are summarized below.
 [The Great Recession]: http://en.wikipedia.org/wiki/Great_Recession
 
 <!-- images link -->
-[image-cps-02]: https://s3-us-west-1.amazonaws.com/chrisrzhou/github/RShiny-LaborForceStatistics/labor-force-statistics-cps-02.png
-[image-cps-14]: https://s3-us-west-1.amazonaws.com/chrisrzhou/github/RShiny-LaborForceStatistics/labor-force-statistics-cps-14.png
-[image-cps-07]: https://s3-us-west-1.amazonaws.com/chrisrzhou/github/RShiny-LaborForceStatistics/labor-force-statistics-cps-07.png
-[image-long-wide-df]: https://s3-us-west-1.amazonaws.com/chrisrzhou/github/RShiny-LaborForceStatistics/labor-force-statistics-long-wide-df.png
-[image-trend-all]: https://s3-us-west-1.amazonaws.com/chrisrzhou/github/RShiny-LaborForceStatistics/labor-force-statistics-trend-all.png
-[image-trend-population]: https://s3-us-west-1.amazonaws.com/chrisrzhou/github/RShiny-LaborForceStatistics/labor-force-statistics-trend-population.png
-[image-trend-non-labor-force]: https://s3-us-west-1.amazonaws.com/chrisrzhou/github/RShiny-LaborForceStatistics/labor-force-statistics-trend-non-labor-force.png
-[image-trend-employed-%]: https://s3-us-west-1.amazonaws.com/chrisrzhou/github/RShiny-LaborForceStatistics/labor-force-statistics-trend-employed%25.png
-[image-trend-unemployed-%]: https://s3-us-west-1.amazonaws.com/chrisrzhou/github/RShiny-LaborForceStatistics/labor-force-statistics-unemployed%25.png
-[image-trend-agricultural-labor-force]: https://s3-us-west-1.amazonaws.com/chrisrzhou/github/RShiny-LaborForceStatistics/labor-force-statistics-trend-agricultural-labor-force.png
-[image-occupation-all]:https://s3-us-west-1.amazonaws.com/chrisrzhou/github/RShiny-LaborForceStatistics/labor-force-statistics-occupation-all.png
-[image-occupation-male-dominated]: https://s3-us-west-1.amazonaws.com/chrisrzhou/github/RShiny-LaborForceStatistics/labor-force-statistics-occupation-male-dominated.png
-[image-occupation-male-dominated-age-group-2]: https://s3-us-west-1.amazonaws.com/chrisrzhou/github/RShiny-LaborForceStatistics/labor-force-statistics-occupation-male-dominated-age-group-2.png
-[image-occupation-education-health]: https://s3-us-west-1.amazonaws.com/chrisrzhou/github/RShiny-LaborForceStatistics/labor-force-statistics-occupation-education-health.png
-[image-occupation-public-administration]: https://s3-us-west-1.amazonaws.com/chrisrzhou/github/RShiny-LaborForceStatistics/labor-force-statistics-occupation-public-administration.png
-[image-occupation-sales-business-finance]: https://s3-us-west-1.amazonaws.com/chrisrzhou/github/RShiny-LaborForceStatistics/labor-force-statistics-occupation-sales-business-finance.png
-[image-education-labor-force-by-gender]: https://s3-us-west-1.amazonaws.com/chrisrzhou/github/RShiny-LaborForceStatistics/labor-force-statistics-education-labor-force-by-gender.png
-[image-education-unemployment-by-gender]: https://s3-us-west-1.amazonaws.com/chrisrzhou/github/RShiny-LaborForceStatistics/labor-force-statistics-education-unemployment-by-gender.png
-[image-education-labor-force-by-race]: https://s3-us-west-1.amazonaws.com/chrisrzhou/github/RShiny-LaborForceStatistics/labor-force-statistics-education-labor-force-by-race.png
-[image-education-unemployment-by-race]: https://s3-us-west-1.amazonaws.com/chrisrzhou/github/RShiny-LaborForceStatistics/labor-force-statistics-education-unemployment-by-race.png
+[image-cps-02]: https://s3-us-west-1.amazonaws.com/chrisrzhou/github/RShiny-LaborForceStatistics/cps-02.png
+[image-cps-14]: https://s3-us-west-1.amazonaws.com/chrisrzhou/github/RShiny-LaborForceStatistics/cps-14.png
+[image-cps-07]: https://s3-us-west-1.amazonaws.com/chrisrzhou/github/RShiny-LaborForceStatistics/cps-07.png
+[image-long-wide-df]: https://s3-us-west-1.amazonaws.com/chrisrzhou/github/RShiny-LaborForceStatistics/long-wide-df.png
+[image-trend-all]: https://s3-us-west-1.amazonaws.com/chrisrzhou/github/RShiny-LaborForceStatistics/trend-all.png
+[image-trend-population]: https://s3-us-west-1.amazonaws.com/chrisrzhou/github/RShiny-LaborForceStatistics/trend-population.png
+[image-trend-non-labor-force]: https://s3-us-west-1.amazonaws.com/chrisrzhou/github/RShiny-LaborForceStatistics/trend-non-labor-force.png
+[image-trend-employed-rate]: https://s3-us-west-1.amazonaws.com/chrisrzhou/github/RShiny-LaborForceStatistics/trend-employed-rate.png
+[image-trend-unemployed-rate]: https://s3-us-west-1.amazonaws.com/chrisrzhou/github/RShiny-LaborForceStatistics/trend-unemployed-rate.png
+[image-trend-agricultural-labor-force]: https://s3-us-west-1.amazonaws.com/chrisrzhou/github/RShiny-LaborForceStatistics/trend-agricultural-labor-force.png
+[image-occupation-all]:https://s3-us-west-1.amazonaws.com/chrisrzhou/github/RShiny-LaborForceStatistics/occupation-all.png
+[image-occupation-male-dominated]: https://s3-us-west-1.amazonaws.com/chrisrzhou/github/RShiny-LaborForceStatistics/occupation-male-dominated.png
+[image-occupation-male-dominated-age-group-2]: https://s3-us-west-1.amazonaws.com/chrisrzhou/github/RShiny-LaborForceStatistics/occupation-male-dominated-age-group-2.png
+[image-occupation-education-health]: https://s3-us-west-1.amazonaws.com/chrisrzhou/github/RShiny-LaborForceStatistics/occupation-education-health.png
+[image-occupation-public-administration]: https://s3-us-west-1.amazonaws.com/chrisrzhou/github/RShiny-LaborForceStatistics/occupation-public-administration.png
+[image-occupation-sales-business-finance]: https://s3-us-west-1.amazonaws.com/chrisrzhou/github/RShiny-LaborForceStatistics/occupation-sales-business-finance.png
+[image-education-labor-force-by-gender]: https://s3-us-west-1.amazonaws.com/chrisrzhou/github/RShiny-LaborForceStatistics/education-labor-force-by-gender.png
+[image-education-unemployment-by-gender]: https://s3-us-west-1.amazonaws.com/chrisrzhou/github/RShiny-LaborForceStatistics/education-unemployment-by-gender.png
+[image-education-labor-force-by-race]: https://s3-us-west-1.amazonaws.com/chrisrzhou/github/RShiny-LaborForceStatistics/education-labor-force-by-race.png
+[image-education-unemployment-by-race]: https://s3-us-west-1.amazonaws.com/chrisrzhou/github/RShiny-LaborForceStatistics/education-unemployment-by-race.png
