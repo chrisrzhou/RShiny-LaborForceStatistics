@@ -74,8 +74,8 @@ shinyServer(function(input, output) {
             scale_y_continuous(labels=abs, expand=c(0.4, 0.4)) + 
             scale_fill_manual(values=CATEGORYCOLORS) + 
             scale_color_manual(values=CATEGORYCOLORS) +
-            labs(title=sprintf("%s (%s - %s)", input$trend_population, input$trend_year_min, input$trend_year_max),
-                 x="Year",
+            labs(title=sprintf("%s (%s - %s)", input$trend_population, input$trend_years[1], input$trend_years[2]),
+                 x="",
                  y=population) + 
             theme(panel.background=element_blank(),
                   axis.text.x=element_blank(),
@@ -136,7 +136,7 @@ shinyServer(function(input, output) {
             scale_fill_manual(values=CATEGORYCOLORS) +
             labs(title=sprintf("%s (by %s)", metric, category),
                  x="Education Level",
-                 y=metric) + 
+                 y="") + 
             theme(panel.background=element_blank(),
                   axis.ticks.y = element_blank())
         plot <- plot + coord_flip()  # flip coordinates

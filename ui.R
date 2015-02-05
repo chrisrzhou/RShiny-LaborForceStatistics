@@ -20,7 +20,7 @@ shinyUI(fluidPage(
                 selectInput(inputId="trend_population", label="Select Population", choices=choices$trend_population, selected=choices$trend_population[[3]]),
                 hr(),
                 sliderInput(inputId="trend_years", label="Filter Years", min=min(choices$trend_year), max=max(choices$trend_year),
-                            value=c(1980, max(choices$trend_year)), step=1, format="####")
+                            value=c(min(choices$trend_year), max(choices$trend_year)), step=1, format="####")
             ),
             
             conditionalPanel(
@@ -82,7 +82,7 @@ shinyUI(fluidPage(
                                  
                                  h3("Data", downloadButton("occupation_download", label="")),
                                  p(class="text-small", "Tabular searchable data display similar to that found in the original source ",
-                                   a(href="http://www.bls.gov/cps/cpsaat17.htm", target="_blank", "http://www.bls.gov/cps/cpsaat17.htm")),
+                                   a(href="http://www.bls.gov/cps/cpsaat14.htm", target="_blank", "http://www.bls.gov/cps/cpsaat14.htm")),
                                  p(class="text-small", "You can download the data with the download button above."),
                                  dataTableOutput("occupation_datatable"),
                                  hr()
@@ -96,7 +96,7 @@ shinyUI(fluidPage(
                                  
                                  h3("Bar Chart"),
                                  p(class="text-small", "Visualization of various labor metrics and statistics by education level."),
-                                 plotOutput("education_barchart", height=500, width="auto"),
+                                 plotOutput("education_barchart", height=400, width="auto"),
                                  hr(),
                                  
                                  h3("Data", downloadButton("education_download", label="")),
