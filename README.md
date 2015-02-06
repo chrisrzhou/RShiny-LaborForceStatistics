@@ -2,8 +2,8 @@
 
 [Project Link][]
 
-This is a data analysis writeup for the R [Shiny][] application - **Labor Force Statistics**, built to visualize 
-labor statistics trends over a number of variables e.g. races and genders.
+This is a data analysis writeup (as of 02/04/14) for the R [Shiny][] application - **Labor Force Statistics**, built to
+visualize labor statistics trends over a number of variables e.g. races and genders.
 
 The project is hosted on an AWS EC2 instance and all code and implementation is open-source and made available on 
 [Github][github].
