@@ -1,6 +1,6 @@
 #  R Shiny Labor Force Statistics
 
-## [Project Link][]
+## [Interactive Project Link][]
 
 This is a data analysis writeup (as of 02/04/14) for the R [Shiny][] application - **Labor Force Statistics**, built to
 visualize labor statistics trends over a number of variables e.g. races and genders.
