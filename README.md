@@ -492,7 +492,7 @@ of them, and they are summarized below.
 
 
 <!-- external links -->
-[project link]: http://shiny.vis.datanaut.io/LaborForceStatistics/
+[interactive project link]: http://shiny.vis.datanaut.io/LaborForceStatistics/
 [Shiny]: http://shiny.rstudio.com/
 [github]: https://github.com/chrisrzhou/RShiny-LaborForceStatistics
 [CPS]: http://www.bls.gov/cps/
